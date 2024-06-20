@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/storage.css">
+</head>
+
+<body>
+    <div class="home-page">
+        <script src="./assets/js/header.js"></script>
+        <div class="main-board">
+            <div class="storage">
+                <div class="storage-title">
+                    <div class="title" id="title-1">
+                        <span>Sản phẩm</span>
+                    </div>
+                    <div class="title" id="title-2"><span>Đơn giá</span></div>
+                    <div class="title" id="title-3"><span>Số lượng</span></div>
+                    <div class="title" id="title-4"><span>Số tiền</span></div>
+                    <div class="title" id="title-5"><span>Thao tác</span></div>
+                </div>
+                <div class="storage-info-production">
+                    <div class="info-production">
+                        <div class="production-name">
+                            <label  id="name-production">
+                                <b>ÁO VEST TUXEDO XANH TRƠN</b>
+                            </label>
+                        </div>
+                        <div class="content-production">
+                            <div class="content-checkbox">
+                                <label>
+                                    <input type="checkbox" name="" value="Sản phẩm" id="checkbox-content">
+                                </label>
+                            </div>
+                            <div class="title-production-image">
+                                <img src="./assets/image/product-1.jpg" alt="" id="title-production-image">
+                            </div>
+                            <div class="content-production-cost">
+                                <b>4,200,000<u>đ</u></b>
+                            </div>
+                            <div class="content-production-amount">
+                                <button onclick="handleMinus()"><i class="fa-solid fa-minus"
+                                        style="color: #000000;"></i></button>
+                                <input type="text" name="amount" id="amount" value="0">
+                                <button onclick="handlePlus()"><i class="fa-regular fa-plus"
+                                        style="color: #000000;"></i></button>
+                            </div>
+                            <div class="content-production-price">
+                                <b>4,200,000<u>đ</u></b>
+                            </div>
+                            <div class="content-production-operation">
+                                <div class="thanh-toan">
+                                    <button style="background-color: #fff; color: #000; border: .3px solid #000;" type="submit">Thanh Toán</button>
+                                </div>
+                                <div class="xoa">
+                                    <button style="background-color: #000; border: none; color: #fff;" type="submit"><i class="fa-solid fa-trash-can" style="color: #fff;"></i>&nbsp; Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="messenger">
+            <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger" style="color: #ffffff; font-size: 35px;"></i></a>
+        </div>
+        <script src="./assets/js/footer.js"></script>
+    </div>
+    <script src="./assets/js/storage.js"></script>
+</body>
+
+</html>
